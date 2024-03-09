@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Carga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Carga</h1>
+    <label for="comprimento">Comprimento do Caminhão:</label>
+    <input type="number" id="comprimento">
+    <label for="largura">Largura do Caminhão:</label>
+    <input type="number" id="largura">
+    <label for="litros">Litros por Saco:</label>
+    <select id="litros">
+      <option value="100">100 Litros</option>
+      <option value="200">200 Litros</option>
+    </select>
+    <label for="quantidade">Quantidade de Sacos:</label>
+    <input type="number" id="quantidade">
+    <button onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
+    <button onclick="copiarResultado()">Copiar Resultado</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
